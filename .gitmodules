@@ -1,0 +1,3 @@
+[submodule "mod_rewite"]
+	path = mod_rewite
+	url = https://github.com/nathanle/rust_rewrite
