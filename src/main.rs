@@ -25,7 +25,7 @@ pub use mod_rewrite::Engine;
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut engine = Engine::default();
     engine.add_rules(r#"
-        RewriteRule ^/3M/ru_RU(.*)$ https://www.3m.com/3M/en_US/select-location/? [R=302,NS,NC,NE]
+        RewriteRule ^/3M/ru_RU(.*)$ https://www.3m.com/3M/en_US/select-location/? [R=302,L,NS,NC,NE]
         RewriteRule ^(.*)jndi:rmi(.*)$ - [R=404]
     "#)?;
 
